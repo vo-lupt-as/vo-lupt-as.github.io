@@ -11,7 +11,7 @@
         <script>
 'use strict'
 
-navigator.serviceWorker.register('https://localhost/push_serviceworker.js').then(
+navigator.serviceWorker.register('push_serviceworker.js').then(
   function(serviceWorkerRegistration) {
     serviceWorkerRegistration.pushManager.subscribe().then(
       function(pushSubscription) {
