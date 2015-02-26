@@ -14,5 +14,8 @@ this.addEventListener('error', function(e) {
 });
 
 this.addEventListener('fetch', function(e) {
-    console.error(e)
+    console.error(e);
+    event.respondWith(
+        new Response('Hello from your friendly neighbourhood service worker!');
+    );
 });
